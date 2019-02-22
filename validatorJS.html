@@ -1,0 +1,108 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <style>
+  #alert{
+    display: none;
+  }
+
+  form {
+    margin-left: 250px;
+  }
+
+  #error1 , #error2 , #error3 , #error4 , #error5 , #error6 , #error7 , #error8 , #error9 {
+    display: none;
+    color: tomato;
+  }
+
+  .row {
+    margin-bottom: 10px;
+  }
+
+  </style>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta http-equiv="X-UA-Compatible" content="ie=edge">
+  <title>Validator</title>
+  <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css" integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
+</head>
+<body>
+
+<h1>Sign Up</h1>
+
+<div class="container" style="height:100px;">
+  <div class="alert alert-danger" role="alert" id="alert">
+    Please enter all fields.
+  </div>
+</div>
+
+<br>
+
+<div class="container">
+  <form name="myForm" onsubmit="return validateForm()" method="post">
+
+<div class="row">
+    <div class="col-md-2">Name:</div>
+    <div class="col-md-5"><input type="text" autocomplete="off" name="name" class="border border-primary"></div>
+    <div class="col-md-5"><p style="padding:0; margin:0;" id="error1">Please fill in your name.</p></div>
+</div>
+
+<div class="row">
+    <div class="col-md-2">Last Name: </div>
+    <div class="col-md-5"><input type="text" autocomplete="off" name="password" class="border border-primary"></div>
+    <div class="col-md-5"><p style="padding:0; margin:0;" id="error2">Please fill in your last name.</p></div>
+</div>
+
+<div class="row">
+    <div class="col-md-2">ZIP:</div>
+    <div class="col-md-5"><input type="text" autocomplete="off" name="zip" class="border border-primary"> </div>
+    <div class="col-md-5"><p style="padding:0; margin:0;" id="error3">Please fill in your zip code.</p></div>
+</div>
+
+<div class="row">
+    <div class="col-md-2">Telephone:</div>
+    <div class="col-md-5"><input type="text" autocomplete="off" name="phone" class="border border-primary"> </div>
+    <div class="col-md-5"><p style="padding:0; margin:0;" id="error4">Please fill in your telephone.</p></div>
+</div>
+
+<div class="row">
+    <div class="col-md-2">Mail:</div>
+    <div class="col-md-5"><input type="text" autocomplete="off" name="mail" class="border border-primary"> </div>
+    <div class="col-md-5"><p style="padding:0; margin:0;" id="error5">Please fill in your mail.</p></div>
+</div>
+
+<div class="row">
+    <div class="col-md-2">City:</div>
+    <div class="col-md-5"><input type="text" autocomplete="off" name="city" class="border border-primary"> </div>
+    <div class="col-md-5"><p style="padding:0; margin:0;" id="error6">Please fill in your city.</p></div>
+</div>
+
+<div class="row">
+    <div class="col-md-2">Favorite Sport:</div>
+    <div class="col-md-5"><input type="text" autocomplete="off" name="sport" class="border border-primary"> </div>
+    <div class="col-md-5"><p style="padding:0; margin:0;" id="error7">Please fill in your city.</p></div>
+</div>
+
+<div class="row">
+    <div class="col-md-2">Favorite Soccer Player:</div>
+    <div class="col-md-5"><input type="text" autocomplete="off" name="soccerPlayer" class="border border-primary"> </div>
+    <div class="col-md-5"><p style="padding:0; margin:0;" id="error8">Please fill in your city.</p></div>
+</div>
+
+<div class="row">
+    <div class="col-md-2">Favorite car:</div>
+    <div class="col-md-5"><input type="text" autocomplete="off" name="car" class="border border-primary"> </div>
+    <div class="col-md-5"><p style="padding:0; margin:0;" id="error9">Please fill in your city.</p></div>
+</div>
+  <input type="submit" value="Submit" class="border border-success">
+</form>
+</div>
+
+<script src="js.js"></script>
+
+
+  <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js" integrity="sha384-UO2eT0CpHqdSJQ6hJty5KVphtPhzWj9WO1clHTMGa3JDZwrnQq4sF86dIHNDz0W1" crossorigin="anonymous"></script>
+  <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js" integrity="sha384-JjSmVgyd0p3pXB1rRibZUAYoIIy6OrQ6VrjIEaFf/nJGzIxFDsf4x0xIM+B07jRM" crossorigin="anonymous"></script>
+</body>
+</html>
